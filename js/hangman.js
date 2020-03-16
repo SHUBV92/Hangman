@@ -46,7 +46,7 @@ function generateButtons() {
 
     function guessedWord(){
         wordStatus = answer.split('')
-        .map(letter => (guessed.indexOf(letter) >= 0 ? letter : "_")).join("");
+        .map(letter => (guessed.indexOf(letter) >= 0 ? letter : " _ ")).join("");
 
         document.getElementById('wordSpotLight').innerHTML = wordStatus;
     }
@@ -59,3 +59,4 @@ function generateButtons() {
 
 randomWord();
 generateButtons();
+guessedWord();
